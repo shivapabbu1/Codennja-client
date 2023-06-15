@@ -1,0 +1,12 @@
+.formdiv{
+min-height: 100vh;
+}
+
+input {
+    width:25rem;
+    margin-bottom: 10px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+

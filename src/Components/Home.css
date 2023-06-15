@@ -1,0 +1,406 @@
+
+
+body{
+  box-sizing: border-box;
+  overflow-x: hidden;
+ scroll-behavior: smooth;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+
+}
+/* canvaspage */
+.canvas{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: navy;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0.38% 75%);
+  background-color: navy;
+  overflow: visible;
+
+}
+.canvaspara{
+  position: relative;
+  top: 200px;
+  padding-left: 60px;
+  
+}
+.canvasimg{
+
+  position: relative;
+  top: 150px;
+  right: 110px;
+}
+.wrapper {
+  display: inline-flex;
+}
+
+.wrapper .dynamic-txts {
+  margin-left: 15px;
+  height: 70px;
+  line-height: 70px;
+  overflow: hidden;
+}
+.dynamic-txts li {
+
+  list-style: none;
+  font-size: 20;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: 0px;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+}
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: salmon;
+  border-left: 2px solid pink;
+  animation: typing 1.5s steps(10) infinite;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+
+
+
+
+/* inspire card */
+
+.image-top{
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+  left: 400px;
+  top: 400px;
+}
+.maindiv{
+  width: 100%;
+}
+.members-container{
+  display: flex;
+   width: 90%;
+  height: 600px;margin: 0px 50px;
+  justify-content: center;
+
+  
+}
+.memberdatacard{
+  width: 200px;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  overflow: hidden;
+  height: 70%;
+  
+}
+.memberdatacard h2{
+  font-size: large;
+  font-weight: bold;
+  margin: 20px;
+}
+.memberdatacard p{
+  width: 300px;
+
+ margin: 20px;
+  opacity: 0;
+}
+
+
+
+
+
+.memberdatacard:hover p {
+  opacity: 1;
+}
+.imagediv-1 {
+  width: 90%;
+  height: 60%;
+  background: url("https://files.codingninjas.in/pareksha-manchanda-9862-1-1-9918-1-10357-17472.webp");
+  background-repeat: no-repeat;
+  background-size:cover; 
+  background-position: center; 
+  position: relative;
+  bottom: 200px;
+  right: -10px;
+  
+
+  
+}
+.imagediv-2 {
+  width: 90%;
+  height: 60%;
+  background: url("https://files.codingninjas.in/harsh-cn-10510-1-10512-17471.webp");
+  background-repeat: no-repeat;
+  background-size:cover; 
+  background-position: center; 
+  position: relative;
+  bottom: 230px;
+  right: -30px;
+  background-color: var(--purple-40);
+
+  
+}
+.imagediv-3 {
+  width: 90%;
+  height: 60%;
+  background: url("https://files.codingninjas.com/satwika-bhattacharjee-9762-9857.webp");
+  background-repeat: no-repeat;
+  background-size:cover; 
+  background-position: center; 
+  position: relative;
+  bottom: 230px;
+  right: -30px;
+  background-color: var(--purple-40);
+
+  
+}
+.imagediv-4 {
+  width: 90%;
+  height: 60%;
+  background: url("https://files.codingninjas.com/rahul-9626-9859.webp");
+  background-repeat: no-repeat;
+  background-size:cover; 
+  background-position: center; 
+  position: relative;
+  bottom: 170px;
+  right: -30px;
+  background-color: var(--purple-40);
+
+  
+}
+.imagediv-5 {
+  width: 90%;
+  height: 60%;
+  background: url("https://files.codingninjas.in/richa-sharma-10960-_1_-17470.webp");
+  background-color: violet;
+  background-repeat: no-repeat;
+  background-size:cover; 
+  background-position: center; 
+  position: relative;
+  bottom: 230px;
+  right: -30px;
+  background-color: var(--purple-40);
+
+  
+}
+.memberdatacard:hover h2{
+ font-size: larger;
+}
+
+.memberdatacard:hover{
+  flex: 5;
+  transition: 0.5s;
+  width: 80%;
+  }
+
+.memberdatacard:hover .imagediv-1{
+  position: relative;
+ left: 60%;
+bottom: 45%;
+ width: 33%;
+ height: 60%;
+}
+.memberdatacard:hover .imagediv-2{
+  position: relative;
+ left: 60%;
+ bottom: 45%;
+ width: 40%;
+ height: 60%;
+}
+.memberdatacard:hover .imagediv-3{
+  position: relative;
+ left: 60%;
+ bottom: 45%;
+ width: 40%;
+ height: 60%;
+}
+.memberdatacard:hover .imagediv-4{
+  position: relative;
+ left: 60%;
+ bottom: 45%;
+ width: 33%;
+ height: 60%;
+}.memberdatacard:hover .imagediv-5{
+  position: relative;
+ left: 60%;
+ bottom: 45%;
+ width: 33%;
+ height: 60%;
+}
+.button-here{
+position: relative;
+top: -60px;
+}
+/* joincard */
+
+.joincard{
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.polygon{
+ display: flex;
+ flex-direction: row;
+ width: 1000px;
+ height: auto;
+}
+
+.hex-box:nth-child(3){
+  position: relative;
+  right: 150px;
+  top: 100px;
+}
+.hex-box:nth-child(4){
+  position: relative;
+  right: 150px;
+  top: 100px;
+}
+.hexa{
+  display: flex;
+ flex-direction: column;
+ width: 350px;
+
+
+}
+.hex-box{
+  width: 100%;
+ height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+ color: white;
+  clip-path: polygon(51.67% 8.67%, 83.81% 30.32%, 84.14% 69.35%, 51.67% 85.7%, 19.19% 69.35%, 19.19% 30.32%); 
+  background-color: #565853
+  
+}
+.row{
+  padding: 0px 50px;
+}
+
+.card-header{
+  width: 100%;
+ height: 100%;
+  text-align: center;
+  padding: 30px;
+ display: flex;
+ justify-content: center;
+ 
+}
+.card-header img{
+ float: right;
+
+}
+.footer{
+  padding-left: 12px;
+} 
+.rate-card{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+.inverted{
+
+  width: auto;
+  height: auto;
+  margin: 120px;
+  clip-path: polygon(50% 1.45%, 100% 15.77%, 100% 97.55%, 0% 97.55%, 0% 15.77%);
+  background-color: blanchedalmond;
+
+}
+.inverted navbar{
+ 
+  display: flex;
+  justify-content:center;
+}
+.nav-item{
+  margin: 10px;
+  font-size: 1.5rem;
+}
+.Querycard{
+  width: 1000px;
+  height: 50vh;
+  display: flex;
+ margin: 0px  220px;
+ padding: 20px;
+ clip-path: polygon(100% 0%, 100% 75.84%, 49.58% 100%, 0% 70.23%, 0% 0%);
+ background-color:#caa7a7cf
+
+}
+.formcard{
+  width: 400px;
+  height: 300px;
+}
+.form-control{
+  width: 80px;
+}
+.formcard form{
+  margin: 20px;
+}
+.lastcard{
+  background-color: #e6e5e910;
+  width: 100%;
+}
+/* coursecard */
+
+.coursecard{
+
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height:20vh;
+  margin-left: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.coursecard .ro{
+ width: 400px;
+ height: 300px;
+
+ display: flex;  
+ flex-direction: row;
+ justify-content: space-around;
+
+
+}
+
+.coursecard .ro:nth-child(1){
+ background-color: lightblue;
+ border-radius: 20px 20px 0px 0px;
+  height: 800px;
+  }
+  
+.newscard {
+ width: 1200px;
+
+
+position: relative;
+top: 50%;
+right: -15%;
+
+
+
+  
+}
+.newscard .row{
+  width: 100%;
+}

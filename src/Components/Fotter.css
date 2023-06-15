@@ -1,0 +1,38 @@
+
+.footer{
+    padding: 50px;
+}
+.row{
+    width: auto;
+}
+.col:nth-child(1){
+    width: 25%;
+}
+.col:nth-child(4){
+    width: 40%;
+}
+.col{
+    width: 11%;
+}
+.sociallogo{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+ 
+    
+}
+.item{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+
+.codeninjalogo-2{
+    width: 200px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+ text-align: center;
+}
